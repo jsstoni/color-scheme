@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/style.css" rel="stylesheet" />
+  </head>
+  <body class="flex justify-center items-center h-screen bg-slate-300">
+    <div class="shadow-lg border border-zinc-300 p-5 w-6/12 rounded-lg bg-slate-50">
+      <h1 class="text-3xl font-bold mb-7 uppercase text-center">Color Scheme</h1>
+
+      <div class="flex">
+        <div class="mr-5">
+          <input
+            type="color"
+            id="color"
+            class="w-[140px] h-[140px] appearance-none"
+            value="#4673fb"
+          />
+          <hr class="h-1 mt-5 mb-3" />
+          <p class="p-2 border border-gray-300 my-2">RGB: <span id="rgb"></span></p>
+          <p class="p-2 border border-gray-300 my-2">HSL: <span id="hsl"></span></p>
+          <p class="p-2 border border-gray-300 my-2">HEX: <span id="hex">#4673fb</span></p>
+        </div>
+
+        <ul id="palette" class="flex-1"></ul>
+      </div>
+    </div>
+
+    <script src="../dist/app.js"></script>
+  </body>
+</html>
